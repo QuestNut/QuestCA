@@ -1,0 +1,433 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {font-display: swap; font-family: 'Cervo-Medium';src: url('38E6D4_22_0.eot');src: url('38E6D4_22_0.eot?#iefix') format('embedded-opentype'),url('38E6D4_22_0.woff') format('woff'),url('38E6D4_22_0.ttf') format('truetype');}
+@font-face {font-display: swap; font-family: 'Cervo-Regular';src: url('38E6D4_23_0.eot');src: url('38E6D4_23_0.eot?#iefix') format('embedded-opentype'),url('38E6D4_23_0.woff') format('woff'),url('38E6D4_23_0.ttf') format('truetype');}
+
+@font-face {font-display: swap; font-family: 'PlutoMedium';src: url('38E6D4_1B_0.eot');src: url('38E6D4_1B_0.eot?#iefix') format('embedded-opentype'),url('38E6D4_1B_0.woff') format('woff'),url('38E6D4_1B_0.ttf') format('truetype');}
+@font-face {font-display: swap; font-family: 'PlutoRegular';src: url('38E6D4_1D_0.eot');src: url('38E6D4_1D_0.eot?#iefix') format('embedded-opentype'),url('38E6D4_1D_0.woff') format('woff'),url('38E6D4_1D_0.ttf') format('truetype');}
+
+header {
+  border-top: solid 12px #00566B;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  z-index: 90;
+}
+
+header p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h1 {
+  color: #0088A9;
+  font-size: 60px;
+  font-family: "Cervo-Medium", Sans-Serif;
+  margin: 40px auto;
+}
+
+body, p {
+  color: #000000;
+  font-family: "PlutoRegular";
+  font-size: 16px;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+}
+
+.img-right {
+  position: absolute;
+  right: 0; 
+  bottom: 0;
+  z-index: 60;
+  
+}
+
+.img-left {
+  position: absolute;
+  left: 0; 
+  bottom: 0;
+  z-index: 60;
+}
+
+header .container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.three-col-wrapper {
+  text-align: center;
+  background-image: url(wood-bg.jpg);
+  background-size: cover;
+  padding: 80px 0;
+  box-shadow: 0px -13px 20px rgba(0, 0, 0, 0.1);
+  z-index: 95;
+  position: relative;
+  border-bottom: solid 1px #eeeeee;
+  overflow: hidden;
+}
+
+.row {
+  max-width: 1240px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.three-col {
+  width: 33.33%;
+  text-align: center;
+  padding: 0px 30px;
+}
+
+.three-col img {
+  margin: 0 auto 30px auto;
+}
+
+.three-col p {
+  line-height: 30px;
+}
+
+.online-products, .instore-products {
+  padding: 80px 0px;
+  text-align: center;
+  border-bottom: solid 1px #eeeeee;
+}
+
+.online-products h2, .instore-products h2  {
+  text-transform: uppercase;
+  color: #0088A9;
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-family: "Cervo-Medium", Sans-Serif;
+}
+
+.online-products ul {
+  list-style-type: none;
+}
+
+.online-products ul li {
+  display: inline-block;
+  margin: 0px 20px;
+  vertical-align: middle;
+}
+
+.online-products ul li img {
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.instore-products ul {
+  columns: 4;
+  column-gap: 80px;
+  text-align: left;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.instore-products ul li {
+  margin-bottom: 20px;
+}
+
+.instore-products ul li a {
+  font-family: "Cervo-Medium", Sans-Serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.075px;
+  text-decoration: none;
+  color: #00566B;
+}
+
+.instore-products ul li a:hover {
+  color: #0088A9;
+  text-decoration: underline;
+}
+
+footer {
+  padding: 80px 0px;
+  text-align: center;
+  background: #00566B;
+}
+
+footer a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .logo {
+  margin-top: 60px;
+  display: block;
+}
+
+
+@media screen and (max-width: 1780px) {
+  .img-right {
+    right: -100px;     
+  }
+  
+  .img-left {
+    left: -100px; 
+  }
+  
+}
+
+@media screen and (max-width: 1560px) {
+  .img-right {
+    right: -70px;
+    width: 400px;     
+  }
+  
+  .img-left {
+    left: -70px; 
+    width: 400px;     
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin: 30px auto;
+  }
+
+  header p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  header .container {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .instore-products ul {
+    max-width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 1220px) {
+  .img-right {
+    width: 350px;     
+  }
+  
+  .img-left {
+    width: 350px;     
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .img-right {
+    width: 300px;     
+  }
+  
+  .img-left {
+    width: 300px;     
+  }
+
+  header {
+    padding: 50px 0;
+  }
+
+}
+
+@media screen and (max-width: 980px) {
+  
+  header {
+    border-top: solid 6px #00566B;
+    padding: 30px 0 300px 0;
+  }
+
+  .three-col-wrapper {
+    padding: 40px 0px;
+  }
+
+  footer {
+    padding: 40px 0px;
+  }
+
+  .online-products, .instore-products {
+    padding: 40px 0px;
+  }
+
+  .online-products ul li {
+    margin: 0px 10px;
+  }
+
+  .online-products ul li a img{
+    max-width: 140px;
+  }
+  
+}
+
+@media screen and (max-width: 670px) {
+  
+  .row {
+    display: block;
+    width: 100%;
+  }
+  
+  .three-col {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 40px auto;
+    padding: 0;
+  }
+
+  .three-col p {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .three-col img {
+    max-width: 60px;
+  }
+
+  .three-col:last-child {
+    margin-bottom: 0px;
+  }
+
+  .instore-products ul {
+    columns: 3;
+    column-gap: 20px;
+    max-width: 90%;
+  }
+
+  .online-products h2, .instore-products h2  {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  
+  header .container {
+    max-width: 90%;
+  }
+
+  header {
+    border-top: solid 6px #00566B;
+    padding: 30px 0 200px 0;
+  }
+
+  .logo {
+    max-width: 140px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  header p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .img-right {
+    width: 200px;  
+    right: 0;     
+   
+  }
+  
+  .img-left {
+    width: 200px;    
+    left: 0;     
+  }
+
+  .instore-products ul {
+    columns: 2;
+    column-gap: 30px;
+    max-width: 90%;
+  }
+
+  footer .logo {
+    margin-top: 30px;
+  }
+  
+}
+
+@media screen and (max-width: 375px) {
+  
+  .logo {
+    max-width: 120px;
+  }
+
+  header {
+    padding: 30px 0 200px 0;
+  }
+
+  h1 {
+    font-size: 30px;;
+  }
+
+  .img-right {
+    width: 170px;
+  }
+  
+  .img-left {
+    width: 170px;  
+  }
+
+}
